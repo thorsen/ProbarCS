@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="greeting">Hello World</h1>
+    <button onclick="changeGreeting()">Cambiar saludo</button>
+    <form id="basicForm" onsubmit="return validateForm()" style="margin-top:30px;">
+        <div class="form-row">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <button type="submit">Enviar</button>
+        <p id="formError" style="color:red;"></p>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
